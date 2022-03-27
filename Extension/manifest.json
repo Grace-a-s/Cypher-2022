@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+  
+    "name": "JKR sucks",
+    "description": "This extension adds a message after JK Rowling's name",
+    "version": "1.0",
+  
+    "browser_action": {
+      "default_icon": "expletive.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://*/*","http://*/*"],
+          "js": ["content.js"],
+        "run_at": "document_end"
+        }
+    ]
+}
